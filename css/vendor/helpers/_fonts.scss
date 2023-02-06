@@ -1,0 +1,139 @@
+// $titles: (
+//   "h1",
+//   "h2",
+//   "h3",
+//   "h4",
+//   "h5",
+// );
+
+// @each $name in $titles {
+//   @if $name == "h1" {
+//     .#{$name}{
+//       &-regular,
+//       &-medium,
+//       &-semibold,
+//       &-bold {
+//         @include rem(38);
+//       }
+//     }
+//   } @else if $name == "h2" {
+//     .#{$name}{
+//       &-regular,
+//       &-medium,
+//       &-semibold,
+//       &-bold {
+//         @include rem(30);
+//       }
+//     }
+//   } @else if $name == "h3" {
+//     .#{$name}{
+//       &-regular,
+//       &-medium,
+//       &-semibold,
+//       &-bold {
+//         @include rem(24);
+//       }
+//     }
+//   } @else if $name == "h4" {
+//     .#{$name}{
+//       &-regular,
+//       &-medium,
+//       &-semibold,
+//       &-bold {
+//         @include rem(20);
+//       }
+//     }
+//   } @else {
+//     .#{$name}{
+//       &-regular,
+//       &-medium,
+//       &-semibold,
+//       &-bold {
+//         @include rem(16);
+//       }
+//     }
+//   }
+
+//   .#{$name}-regular {
+//     font-weight: 400;
+//   }
+  
+//   .#{$name}-medium {
+//     font-weight: 500;
+//   }
+
+//   .#{$name}-semibold {
+//     font-weight: 600;
+//   }
+
+//   .#{$name}-bold {
+//     font-weight: 700;
+//   }
+// }
+
+$titles: (
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+);
+
+$font-weights-names: (
+  "normal",
+  "medium",
+  "semibold",
+  "bold",
+);
+
+$font-weights: (
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+);
+
+$titles-sizes: (
+  h1: 38,
+  h2: 30,
+  h3: 24,
+  h4: 20,
+  h5: 16,
+);
+
+// Esta es la forma optima que por alguna razon no funciona
+@each $name in $titles {
+  .#{$name}{
+    @each $weight in $font-weights-names {
+      &-#{$weight} {
+        font-weight: map-get($font-weights, $weight);
+        @include rem(map-get($titles-sizes, $name));
+      }
+    }
+  }
+}
+
+@each $weight in $font-weights-names {
+  .font-body {
+    &-#{$weight} {
+      font-weight: map-get($font-weights, $weight);
+      @include rem(14);
+
+      @media (min-width: 992px) {
+        @include rem(16);
+      }
+    }
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
+}

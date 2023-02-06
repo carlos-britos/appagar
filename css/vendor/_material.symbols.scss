@@ -1,0 +1,263 @@
+.material-symbols {
+  &-outlined,
+  &-rounded,
+  &-sharp {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+}
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+}
+
+.material-symbols-sharp {
+  font-family: 'Material Symbols Sharp';
+}
+
+// Variation settings
+.material-symbols {
+  &-outlined,
+  &-rounded,
+  &-sharp {
+    
+    &.f0-w300-g0-o16 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 16;
+      font-size: 16px;
+    }
+
+    &.f0-w700-g0-o18 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 0,
+      'opsz' 18;
+      font-size: 18px;
+    }
+
+    &.f0-w300-g0-o20 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 20;
+      font-size: 20px;
+    }
+
+    &.f1-w300-g0-o20 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 20;
+      font-size: 20px;
+    }
+
+    &.f1-w600-g0-o20 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 20;
+      font-size: 20px;
+    }
+
+    &.f0-w300-g0-o40 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 40;
+      font-size: 40px;
+    }
+
+    &.f1-w300-g0-o40 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 40;
+      font-size: 40px;
+    }
+
+    &.f0-w300-g0-o48 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 48;
+      font-size: 48px;
+    }
+
+    &.f1-w300-g0-o48 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 48;
+      font-size: 48px;
+    }
+
+    &.f0-w100-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 100,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w500-g0-o20 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 500,
+      'GRAD' 0,
+      'opsz' 20;
+      font-size: 20px;
+    }
+
+    &.f0-w600-g0-o20 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 20;
+      font-size: 20px;
+    }
+
+    // ---
+
+    &.f0-w200-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 200,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w300-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w400-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w500-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 500,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w600-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f0-w700-g0-o24 {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w100-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 100,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w200-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 200,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w300-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w400-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w500-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 500,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w600-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+
+    &.f1-w700-g0-o24 {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 700,
+      'GRAD' 0,
+      'opsz' 24;
+      font-size: 24px;
+    }
+  }
+}
