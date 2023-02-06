@@ -1,0 +1,304 @@
+:root {
+  --white: #FFFFFF;
+  --black: #1C1B1F;
+  --background: #EFF5FA;
+  --primary: #448BF5;
+  --accent: #F5A300;
+  --success: #00B850;
+  --error: #FF4747;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: var(--background);
+}
+
+.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+}
+
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded";
+}
+
+.material-symbols-sharp {
+  font-family: "Material Symbols Sharp";
+}
+
+.material-symbols-outlined.f0-w300-g0-o16, .material-symbols-rounded.f0-w300-g0-o16, .material-symbols-sharp.f0-w300-g0-o16 {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 16;
+  font-size: 16px;
+}
+.material-symbols-outlined.f0-w700-g0-o18, .material-symbols-rounded.f0-w700-g0-o18, .material-symbols-sharp.f0-w700-g0-o18 {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 18;
+  font-size: 18px;
+}
+.material-symbols-outlined.f0-w300-g0-o20, .material-symbols-rounded.f0-w300-g0-o20, .material-symbols-sharp.f0-w300-g0-o20 {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+}
+.material-symbols-outlined.f1-w300-g0-o20, .material-symbols-rounded.f1-w300-g0-o20, .material-symbols-sharp.f1-w300-g0-o20 {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+}
+.material-symbols-outlined.f1-w600-g0-o20, .material-symbols-rounded.f1-w600-g0-o20, .material-symbols-sharp.f1-w600-g0-o20 {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+}
+.material-symbols-outlined.f0-w300-g0-o40, .material-symbols-rounded.f0-w300-g0-o40, .material-symbols-sharp.f0-w300-g0-o40 {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 40;
+  font-size: 40px;
+}
+.material-symbols-outlined.f1-w300-g0-o40, .material-symbols-rounded.f1-w300-g0-o40, .material-symbols-sharp.f1-w300-g0-o40 {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 40;
+  font-size: 40px;
+}
+.material-symbols-outlined.f0-w300-g0-o48, .material-symbols-rounded.f0-w300-g0-o48, .material-symbols-sharp.f0-w300-g0-o48 {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+  font-size: 48px;
+}
+.material-symbols-outlined.f1-w300-g0-o48, .material-symbols-rounded.f1-w300-g0-o48, .material-symbols-sharp.f1-w300-g0-o48 {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
+  font-size: 48px;
+}
+.material-symbols-outlined.f0-w100-g0-o24, .material-symbols-rounded.f0-w100-g0-o24, .material-symbols-sharp.f0-w100-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w500-g0-o20, .material-symbols-rounded.f0-w500-g0-o20, .material-symbols-sharp.f0-w500-g0-o20 {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+}
+.material-symbols-outlined.f0-w600-g0-o20, .material-symbols-rounded.f0-w600-g0-o20, .material-symbols-sharp.f0-w600-g0-o20 {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 20;
+  font-size: 20px;
+}
+.material-symbols-outlined.f0-w200-g0-o24, .material-symbols-rounded.f0-w200-g0-o24, .material-symbols-sharp.f0-w200-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w300-g0-o24, .material-symbols-rounded.f0-w300-g0-o24, .material-symbols-sharp.f0-w300-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w400-g0-o24, .material-symbols-rounded.f0-w400-g0-o24, .material-symbols-sharp.f0-w400-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w500-g0-o24, .material-symbols-rounded.f0-w500-g0-o24, .material-symbols-sharp.f0-w500-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w600-g0-o24, .material-symbols-rounded.f0-w600-g0-o24, .material-symbols-sharp.f0-w600-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f0-w700-g0-o24, .material-symbols-rounded.f0-w700-g0-o24, .material-symbols-sharp.f0-w700-g0-o24 {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w100-g0-o24, .material-symbols-rounded.f1-w100-g0-o24, .material-symbols-sharp.f1-w100-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w200-g0-o24, .material-symbols-rounded.f1-w200-g0-o24, .material-symbols-sharp.f1-w200-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w300-g0-o24, .material-symbols-rounded.f1-w300-g0-o24, .material-symbols-sharp.f1-w300-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w400-g0-o24, .material-symbols-rounded.f1-w400-g0-o24, .material-symbols-sharp.f1-w400-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w500-g0-o24, .material-symbols-rounded.f1-w500-g0-o24, .material-symbols-sharp.f1-w500-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w600-g0-o24, .material-symbols-rounded.f1-w600-g0-o24, .material-symbols-sharp.f1-w600-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+.material-symbols-outlined.f1-w700-g0-o24, .material-symbols-rounded.f1-w700-g0-o24, .material-symbols-sharp.f1-w700-g0-o24 {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
+  font-size: 24px;
+}
+
+.h1-normal {
+  font-weight: 400;
+  font-size: 2.375rem;
+}
+.h1-medium {
+  font-weight: 500;
+  font-size: 2.375rem;
+}
+.h1-semibold {
+  font-weight: 600;
+  font-size: 2.375rem;
+}
+.h1-bold {
+  font-weight: 700;
+  font-size: 2.375rem;
+}
+
+.h2-normal {
+  font-weight: 400;
+  font-size: 1.875rem;
+}
+.h2-medium {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.h2-semibold {
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+.h2-bold {
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.h3-normal {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.h3-medium {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.h3-semibold {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.h3-bold {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.h4-normal {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.h4-medium {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.h4-semibold {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.h4-bold {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.h5-normal {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.h5-medium {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.h5-semibold {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.h5-bold {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.font-body-normal {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  .font-body-normal {
+    font-size: 1rem;
+  }
+}
+
+.font-body-medium {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  .font-body-medium {
+    font-size: 1rem;
+  }
+}
+
+.font-body-semibold {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  .font-body-semibold {
+    font-size: 1rem;
+  }
+}
+
+.font-body-bold {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  .font-body-bold {
+    font-size: 1rem;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.header {
+  background: var(--white);
+}
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-mobile {
+  background: var(--white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

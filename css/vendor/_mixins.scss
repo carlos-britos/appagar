@@ -1,0 +1,7 @@
+@mixin rem($pixels) {
+  font-size: ($pixels / 16) * 1rem;
+}
+
+// .example {
+//   @include rem(16);
+// }
