@@ -1,0 +1,55 @@
+:root {
+	--white: #FFFFFF;
+	--black: #1C1B1F;
+
+	--background: #EFF5FA;
+
+	--primary: #448BF5;
+	--accent: #F5A300;
+
+	--success: #00B850;
+	--error: #FF4747;
+}
+
+$colors: (
+	white: var(--white),
+	black: var(--black),
+	primary: var(--primary),
+	accent: var(--accent),
+	success: var(--success),
+	error: var(--error),
+);
+
+$titles: (
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+);
+
+$font-weights-names: (
+  "normal",
+  "medium",
+  "semibold",
+  "bold",
+);
+
+$font-weights: (
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+);
+
+$font-sizes: (
+  h1: 38,
+  h2: 30,
+  h3: 24,
+  h4: 20,
+  h5: 16,
+	body: 16,
+	footnote: 12,
+);
+
+$border-width-default: 1px; 
