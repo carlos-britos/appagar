@@ -1,3 +1,4 @@
+// Se le envia un valor en pixeles y lo transforma a rem
 @mixin rem($pixels) {
   font-size: ($pixels / 16) * 1rem;
 }
@@ -5,6 +6,7 @@
 //   @include rem(16);
 // }
 
+// Se le pasa la posicion (h1, h2, body, footnote) y el peso (normal, medium, semibold y bold) y le asigna las propiedades correspondientes
 @mixin font($position ,$weight) {
   @include rem(map-get($font-sizes, $position));
   font-weight: map-get($font-weights, $weight);
@@ -13,6 +15,7 @@
 //   @include font(body, normal);
 // }
 
+// Se le pasa el la propiedad (background, color, border) y el color (primary, secondary, accent) y le asigna la propiedad correspondiente
 @mixin color($type ,$color) {
   @if $type == "border" {
     border: $border-width-default solid map-get($colors, $color);
