@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  db:
+    env_file:
+      - ./build/db/env/development.env
+
+  webapp:
+    tty: true
+    stdin_open: true
+    env_file:
+      - ./build/webapp/env/development.env
+      - ./build/db/env/development.env
+    volumes:
+      - gem_cache:/usr/local/bundle/gems
+
+    ports:
+      - "3000:3000"
+
+  # pgadmin:
+  #   env_file:
+  #     - ./build/pgadmin/development.env
+  #   ports:
+  #     - "8899:80"
+
+volumes:
+  gem_cache:
