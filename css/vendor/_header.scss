@@ -1,17 +1,20 @@
 .header {
   background: var(--white);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3),0px 1px 3px 1px rgba(0,0,0,.15);
 
-  nav {
-    display: flex;
+  &__nav {
+    @include flex( center, between );
+    height: 60px;
+    padding: 0 24px;
+
+    .nav {
+      &__logo {
+        @include font( h3, normal);
+      }
+      
+      &__action {
+        @include flex( center, center );
+      }
+    }
   }
-}
-
-.menu-mobile {
-  background: var(--white);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
-  display: flex;
 }

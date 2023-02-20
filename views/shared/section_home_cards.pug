@@ -1,0 +1,20 @@
+- var fijos = [{name: "Basquet", price: "$1500"},{name: "Gimnasio", price: "$3800"},{name: "Nubenet", price: "$3050"},{name: "Claro", price: "$1600"},{name: "Seguro auto", price: "$4250"}];
+
+- var titles = ["Fijos", "Cuotas", "Temporales",];
+
+section.home-cards
+	each card in titles
+		div.card 
+			div.card__title
+				h3.title__text #{card}
+				div.title__actions
+					i.material-symbols-outlined.f0-w600-g0-o24 add
+
+			div.card__list
+				each item in fijos
+					label.item
+						div #{item.name}
+						div.item__right
+							div #{item.price}
+							div.item__check
+								input(type="checkbox")

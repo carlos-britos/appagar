@@ -1,0 +1,45 @@
+.card {
+	@include color( background, white );
+	padding: 32px;
+	border-radius: 12px;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3),0px 1px 3px 1px rgba(0,0,0,.15);
+
+	&__title {
+		@include flex( center, between );
+
+		.title {
+			&__text {
+				@include font( h3, semibold );
+			}
+
+			&__actions {
+				@include flex( center, center );
+				@include color( background, background );
+				color: #458bf5b3;
+				padding: 4px;
+				border-radius: 4px;
+				margin-right: -8px;
+			}
+		}
+	}
+
+	&__list {
+		@include font( body, normal );
+
+		.item {
+			padding: 16px 0;
+			border-bottom: $border-width-default solid #DDDDDD;
+			@include flex( center, between );
+
+			&__right {
+				@include flex( center, end );
+				@include font( body, medium );
+				gap: 16px;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

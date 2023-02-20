@@ -15,35 +15,195 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <div><a class="brand-logo" href="#">Appagar</a>
-          <ul>
-            <li><i class="material-symbols-outlined">add</i><a href="">hola </a></li>
-            <li><a href="">hola</a></li>
-          </ul>
-        </div>
+      <nav class="header__nav">
+        <div class="nav__logo"><a class="brand-logo" href="#"> <strong>App</strong><span>agar</span></a></div>
+        <div class="nav__action"><i class="material-symbols-outlined">add</i><i class="material-symbols-outlined">add</i></div>
       </nav>
       <div class="menu-mobile">
-        <div class="item">hola</div>
-        <div class="item">hola</div>
-        <div class="item">hola</div>
-        <div class="item">hola</div>
+        <button class="menu-mobile__item menu-mobile__item--active">
+          <div class="item-wrapper"><i class="material-symbols-outlined">home</i>
+            <div class="item-wrapper__label">Home</div>
+          </div>
+        </button>
+        <button class="menu-mobile__item">
+          <div class="item-wrapper"><i class="material-symbols-outlined">search</i>
+            <div class="item-wrapper__label">Buscar</div>
+          </div>
+        </button>
+        <button class="menu-mobile__item">
+          <div class="item-wrapper"><i class="material-symbols-outlined">favorite</i>
+            <div class="item-wrapper__label">Favoritos</div>
+          </div>
+        </button>
+        <button class="menu-mobile__item">
+          <div class="item-wrapper"><i class="material-symbols-outlined">settings</i>
+            <div class="item-wrapper__label">Ajustes</div>
+          </div>
+        </button>
       </div>
     </header>
     <main>
-      <section>
-        <div class="card"> </div>
-        <h1 class="h1-normal">fijos</h1>
-        <h2 class="h2-medium">fijos</h2>
-        <h3 class="h3-semibold">fijos</h3>
-        <h4 class="h4-bold">fijos</h4>
-        <h5 class="h5-semibold">fijos</h5>
+      <section class="home-cards">
+        <div class="card"> 
+          <div class="card__title">
+            <h3 class="title__text">Fijos</h3>
+            <div class="title__actions"><i class="material-symbols-outlined f0-w600-g0-o24">add</i></div>
+          </div>
+          <div class="card__list">
+            <label class="item">
+              <div>Basquet</div>
+              <div class="item__right">
+                <div>$1500</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Gimnasio</div>
+              <div class="item__right">
+                <div>$3800</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Nubenet</div>
+              <div class="item__right">
+                <div>$3050</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Claro</div>
+              <div class="item__right">
+                <div>$1600</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Seguro auto</div>
+              <div class="item__right">
+                <div>$4250</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="card"> 
+          <div class="card__title">
+            <h3 class="title__text">Cuotas</h3>
+            <div class="title__actions"><i class="material-symbols-outlined f0-w600-g0-o24">add</i></div>
+          </div>
+          <div class="card__list">
+            <label class="item">
+              <div>Basquet</div>
+              <div class="item__right">
+                <div>$1500</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Gimnasio</div>
+              <div class="item__right">
+                <div>$3800</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Nubenet</div>
+              <div class="item__right">
+                <div>$3050</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Claro</div>
+              <div class="item__right">
+                <div>$1600</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Seguro auto</div>
+              <div class="item__right">
+                <div>$4250</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="card"> 
+          <div class="card__title">
+            <h3 class="title__text">Temporales</h3>
+            <div class="title__actions"><i class="material-symbols-outlined f0-w600-g0-o24">add</i></div>
+          </div>
+          <div class="card__list">
+            <label class="item">
+              <div>Basquet</div>
+              <div class="item__right">
+                <div>$1500</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Gimnasio</div>
+              <div class="item__right">
+                <div>$3800</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Nubenet</div>
+              <div class="item__right">
+                <div>$3050</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Claro</div>
+              <div class="item__right">
+                <div>$1600</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+            <label class="item">
+              <div>Seguro auto</div>
+              <div class="item__right">
+                <div>$4250</div>
+                <div class="item__check">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
       </section>
-      <p class="font-body-normal">Bienvenido a mi sitio web</p>
-      <p class="font-body-medium">Bienvenido a mi sitio web</p>
-      <p class="font-body-semibold">Bienvenido a mi sitio web</p>
-      <p class="font-body-bold">Bienvenido a mi sitio web</p>
-      <button>Boton</button>
     </main>
     <footer>
       <p>Derechos reservados &copy; 2023</p>

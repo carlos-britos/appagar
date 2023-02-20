@@ -1,16 +1,28 @@
 header.header
-	nav
-		div
-			a(href="#", class="brand-logo") Appagar
-			ul
-				li
-					i.material-symbols-outlined add
-					a(href="") hola 
-				li
-					a(href="") hola
+	nav.header__nav
+		div.nav__logo
+			a(href="#", class="brand-logo") 
+				strong App
+				span agar
+
+		div.nav__action
+			i.material-symbols-outlined add
+			i.material-symbols-outlined add
 
 	div.menu-mobile
-		.item hola
-		.item hola
-		.item hola
-		.item hola
+		button.menu-mobile__item.menu-mobile__item--active
+			div.item-wrapper
+				i.material-symbols-outlined home
+				div.item-wrapper__label Home
+		button.menu-mobile__item
+			div.item-wrapper
+				i.material-symbols-outlined search
+				div.item-wrapper__label Buscar
+		button.menu-mobile__item
+			div.item-wrapper
+				i.material-symbols-outlined favorite
+				div.item-wrapper__label Favoritos
+		button.menu-mobile__item
+			div.item-wrapper
+				i.material-symbols-outlined settings
+				div.item-wrapper__label Ajustes

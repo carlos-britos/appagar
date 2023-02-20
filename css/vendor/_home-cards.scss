@@ -1,0 +1,11 @@
+.home-cards {
+  padding: 0 8px;
+  @include flex( center, center );
+  flex-direction: column;
+  gap: 16px;
+  min-height: calc(100vh - 150px);
+
+  .card {
+    width: 100%;
+  }
+}

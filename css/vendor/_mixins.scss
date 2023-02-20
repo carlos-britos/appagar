@@ -23,3 +23,30 @@
 // .example {
 //   @include color(background, primary);
 // }
+
+@mixin flex($vertical ,$horizontal) {
+  display: flex;
+  align-items: map-get($flex-position, $vertical);
+  justify-content: map-get($flex-position, $horizontal);
+}
+// .example {
+//   @include flex(center, between);
+// }
+
+
+@mixin center-position($axis) {
+  @if $axis == "horizontal" {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $axis == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+// .example {
+//   @include flex(center, between);
+// }

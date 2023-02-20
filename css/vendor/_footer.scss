@@ -1,0 +1,7 @@
+footer {
+  padding-bottom: 86px;
+  padding-top: 24px;
+  text-align: center;
+  @include color( background, black );
+  @include color( color, white );
+}
