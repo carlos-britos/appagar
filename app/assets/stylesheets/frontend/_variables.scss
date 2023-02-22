@@ -14,6 +14,7 @@
 $colors: (
 	white: var(--white),
 	black: var(--black),
+  background: var(--background),
 	primary: var(--primary),
 	accent: var(--accent),
 	success: var(--success),
@@ -52,4 +53,12 @@ $font-sizes: (
 	footnote: 12,
 );
 
-$border-width-default: 1px; 
+$flex-position: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  around: space-around,
+  between: space-between,
+);
+
+$border-width-default: 1px;

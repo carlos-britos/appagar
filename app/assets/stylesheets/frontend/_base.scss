@@ -8,3 +8,13 @@
 body {
   background: var(--background);
 }
+
+main {
+	min-height: calc(100vh - 60px);
+	padding: 24px 0;
+}
+
+a {
+	text-decoration: unset;
+	color: inherit;
+}
