@@ -1,0 +1,52 @@
+@mixin rem($pixels) {
+  font-size: ($pixels / 16) * 1rem;
+}
+// .example {
+//   @include rem(16);
+// }
+
+@mixin font($position ,$weight) {
+  @include rem(map-get($font-sizes, $position));
+  font-weight: map-get($font-weights, $weight);
+}
+// .example {
+//   @include font(body, normal);
+// }
+
+@mixin color($type ,$color) {
+  @if $type == "border" {
+    border: $border-width-default solid map-get($colors, $color);
+  } @else {
+    #{$type}: map-get($colors, $color),
+  }
+}
+// .example {
+//   @include color(background, primary);
+// }
+
+@mixin flex($vertical ,$horizontal) {
+  display: flex;
+  align-items: map-get($flex-position, $vertical);
+  justify-content: map-get($flex-position, $horizontal);
+}
+// .example {
+//   @include flex(center, between);
+// }
+
+
+@mixin center-position($axis) {
+  @if $axis == "horizontal" {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $axis == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+// .example {
+//   @include flex(center, between);
+// }
